@@ -8,7 +8,27 @@
   </head>
   <body>
     <main id="main">
+      <a href="#" onclick="createRecipe()"> Create Recipe </a>
     </main>
+
+    <script id='recipe-form-template'type="text/x-handlebars-template">
+      <header>{{name}}</header>
+      <div id="description"> {{description}}</div>
+      <div id="ingredients">
+        {{ingredients[0]}}<br>
+        {{ingredients[1]}}<br>
+        {{ingredients[2]}}<br>
+        {{ingredients[3]}}<br>
+        {{ingredients[4]}}
+     </div>
+    </script>
+    <script id='recipe-template'type="text/x-handlebars-template">
+      <header>{{name}}</header>
+      {{> recipePartial}}
+      <a href="/edit"> Edit Recipe<a>
+    </script>
+
+
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->

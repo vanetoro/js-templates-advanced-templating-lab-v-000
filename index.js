@@ -4,3 +4,6 @@ function init() {
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
+
+
+Handlebars.registerPartial('recipePartial'.document.getElementById('recipeDetailsPartial').innerHTML)
