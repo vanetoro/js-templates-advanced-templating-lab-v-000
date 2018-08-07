@@ -11,15 +11,33 @@
       <a href="#" onclick="createRecipe()"> Create Recipe </a>
     </main>
 
+
+    <form id='recipe-form' onsubmit="createRecipe(); return false;">
+        Name: <input type="text" id="name"><br>
+        Description: <input type="textarea" id="description"><br>
+        Ingredients: <br>
+        <ol>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+        </ol>
+        <input type="submit">
+      </form>
+
+
+
     <script id='recipe-form-template'type="text/x-handlebars-template">
       <header>{{name}}</header>
       <div id="description"> {{description}}</div>
-      <div id="ingredients">
-        {{ingredients[0]}}<br>
-        {{ingredients[1]}}<br>
-        {{ingredients[2]}}<br>
-        {{ingredients[3]}}<br>
-        {{ingredients[4]}}
+      <ul>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+      </ul>
      </div>
     </script>
     <script id='recipe-template'type="text/x-handlebars-template">
