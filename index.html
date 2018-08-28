@@ -14,6 +14,7 @@
     </main>
 
 
+<<<<<<< HEAD
 
 
     <script id='recipe-form-template'type="text/x-handlebars-template">
@@ -34,6 +35,35 @@
           </ol>
           <input type="submit">
         </form>
+=======
+    <form id='recipe-form' onsubmit="createRecipe(); return false;">
+        Name: <input type="text" id="name"><br>
+        Description: <input type="textarea" id="description"><br>
+        Ingredients: <br>
+        <ol>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+          <li><input type="text" id="ingredient"></li>
+        </ol>
+        <input type="submit">
+      </form>
+
+
+
+    <script id='recipe-form-template'type="text/x-handlebars-template">
+      <header>{{name}}</header>
+      <div id="description"> {{description}}</div>
+      <ul>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+        <li>{{ingredient}}</li>
+      </ul>
+     </div>
+>>>>>>> abaddf0397bd2516e6e4f7fa5a2ba91a42e3448b
     </script>
 
 
